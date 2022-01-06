@@ -1,0 +1,61 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri;
+}  
+button {   
+       background-color: blue;   
+       width: 30%;  
+        color: white;  
+        font-size: medium;
+        border: none;   
+        cursor: pointer; 
+         }   
+ form {   
+        border: 1px solid purple;  
+   margin: 20px;
+    }   
+ input[type=text], input[type=password] {   
+        width: 90%;   
+        margin: 10px;  
+        padding: 12px 20px;   
+         
+        border: 1px solid black;   
+        box-sizing: border-box; 
+        border-radius: 30px;
+    }  
+  input[type=text]:focus, input[type=password]:focus {  
+    background-color: lightblue;  
+    }
+  
+ button:hover {   
+        opacity: 0.7;   
+               }   
+
+       .container {   
+        padding: 25px;   
+        background-color: lightyellow;  
+                  }   
+</style>   
+</head>    
+<body>    
+    <center> <h1>Login Form</h1> </center>   
+    <form>  
+        <div class="container">   
+            <label>Email or Username: </label>   
+            <input type="text" placeholder="Enter Email or Username" name="username" required>  <br>
+            <label>Password : </label>   <br>
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Login</button>   
+                 <br>
+            Forgot <a href="#"> password? </a>   
+        </div>   
+    </form>     
+</body>     
+</html>  
+
+ 
