@@ -1,0 +1,102 @@
+ 
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: fantasy;  
+  background-color: #c2ffc0;  
+}  
+.container {  
+    padding: 40px;  
+  background-color: lightblue; 
+}  
+  
+input[type=text], input[type=password] {  
+  width: 90%;  
+  padding: 10px;  
+  margin: 5px 0 15px 0;  
+  display: inline-block;  
+  border: bottom 1px;  
+  background: #f1f1f1;  
+  font-family: Calibari;
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: lightyellow;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px;  
+         }  
+hr {  
+  border: 0.5px solid red;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: blue;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 35%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+  .resetbtn {  
+  background-color: blue;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 30%;  
+  opacity: 0.9;  
+    
+    }
+ 
+        @media (max-width: 200px){
+            .container{
+                width: 90%;
+                background-color:255, 189, 189);
+            }
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1>Registration Form</h1> </center>  
+  <hr>  
+  <label> First-Name: </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middle-Name: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required/>   
+<label> Last-Name: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required/>  
+ <label>Email: </label>   
+            <input type="text" placeholder="Enter Email" name="Email" required>  <br>
+<div>  
+<label>   
+
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+  </div>  
+
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="confirm-psw"><b>Confirm Password</b></label>  
+    <input type="password" placeholder="Confirm Password" name="confirm-psw" required>  
+    <button type="submit" class="registerbtn">Register</button>   
+          <button type="submit" class="resetbtn">Reset</button>   
+</form>  
+</body>  
+</html>  
